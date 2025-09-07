@@ -1,12 +1,27 @@
 # React + Vite
+MovieApp – Movie Management App with Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web app built with React, using Firebase for user authentication and cloud data management.  
+Users can register, log in, view a list of movies, and add new ones. All data is stored and updated in real time via Firebase.
 
-Currently, two official plugins are available:
+> Note: This project is still in progress and not yet finalized.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used:
+- React (JavaScript)
+- Firebase (Authentication + Firestore Database)
+- Material UI (MUI) – Styling and UI components
 
-## Expanding the ESLint configuration
+Key Features:
+- User Registration & Login – Handled via Firebase Authentication
+- Protected Routes – Only logged-in users can access app pages via the Sidebar
+- View Movies – Fetch and display a list of movies from Firestore
+- Add New Movie – Logged-in users can add a movie, which is saved in the cloud
+- Real-time Updates – Data is synced live using Firebase Firestore (NoSQL)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+How to Run:
+1. Clone the repository  
+2. Run npm install  
+3. Create a Firebase project and add your Firebase config to a .env file or config file  
+4. Run the app with:  
+   bash
+   npm run dev
